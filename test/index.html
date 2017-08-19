@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>hello</h2>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+		  type: "GET",
+		  dataType: "text/html",
+          header : "application/json; charset=utf-8",
+		  url: "http://172.20.10.4/SAPB1_WebServiceKOFI_MB/B1WebService.svc/testString",
+		  success: function(data){
+		  		//console.log(JSON.stringify(data));
+		  		alert("hi");
+		  }
+		});
+		alert("kdaheh");
+	</script>
+</body>
+</html>
